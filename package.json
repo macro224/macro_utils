@@ -1,7 +1,7 @@
 {
-  "name": "macro_tool",
-  "version": "0.0.2",
-  "description": "tool",
+  "name": "macro_utils",
+  "version": "0.0.1",
+  "description": "utils",
   "main": "./lib",
   "scripts": {
     "dev": "rollup -c -w",

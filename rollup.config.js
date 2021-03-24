@@ -8,7 +8,7 @@ export default {
   input: 'src/index.js',
   output: {
     format: 'umd',
-    name: 'macro_tool',
+    name: 'macro_utils',
     file: 'lib/index.js'
   },
   plugins: [
