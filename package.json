@@ -1,12 +1,11 @@
 {
   "name": "macro_utils",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "utils",
   "main": "./lib",
   "scripts": {
     "dev": "rollup -c -w",
-    "build": "rollup -c",
-    "publish": "node build/version && npm run build"
+    "build": "node build/version && rollup -c"
   },
   "author": "",
   "license": "ISC",
