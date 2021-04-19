@@ -6,7 +6,6 @@ const objectProto = Object.prototype
  * @returns {boolean} 如果是原型返回真，不是返回假
  */
 
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 function isPrototype(value) {
   const Ctor = value && value.constructor
   const proto = (typeof Ctor === 'function' && Ctor.prototype) || objectProto
