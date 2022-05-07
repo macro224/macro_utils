@@ -1,7 +1,9 @@
 import deepAssign from './deepAssign.js'
+import delSpac from './delSpac'
 
 const modeles = {
-    deepAssign
+    deepAssign,
+    delSpac
 }
 
 export default modeles
