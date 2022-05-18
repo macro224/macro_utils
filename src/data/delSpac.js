@@ -1,4 +1,11 @@
-const deleSpac = function(str,direction) { // 1 串的模板 2 清除哪边空格
+/**
+ * 根据传入内容清除其中的空格
+ * @param {*} str 传入内容
+ * @param {*} direction 去除空格的方式 left: 左边; right: 右边; both: 两边; middle: 保存两边的空格清除中间; 不传就清除全部;
+ * @returns {Object} 返回参数对象 或者 字符串
+ */
+
+const deleSpac = function(str, direction) { // 1 串的模板 2 清除哪边空格
   let Reg = '';
   switch(direction) {
     case 'left' : // 去除左边
@@ -23,4 +30,4 @@ const deleSpac = function(str,direction) { // 1 串的模板 2 清除哪边空�
   return newStr;
 }
 
-export default deepAssign
+export default deleSpac

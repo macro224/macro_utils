@@ -1,13 +1,13 @@
-import type from './type'
-import data from './data'
-import format from './format'
-import validator from './validator'
+import typeModules from './type'
+import dataModules from './data'
+import formatModules from './format'
+import validatorModules from './validator'
 
 const modeles = { 
-  type,
-  data,
-  format,
-  validator
+  type: typeModules,
+  data: dataModules,
+  format: formatModules,
+  validator: validatorModules
 }
 
 export default modeles
