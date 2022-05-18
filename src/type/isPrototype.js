@@ -6,7 +6,7 @@ const objectProto = Object.prototype
  * @returns {boolean} 如果是原型返回真，不是返回假
  */
 
-function isPrototype(value) {
+function isPrototype (value) {
   const Ctor = value && value.constructor
   const proto = (typeof Ctor === 'function' && Ctor.prototype) || objectProto
 

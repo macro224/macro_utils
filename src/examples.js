@@ -1,3 +1,3 @@
 import time from './format/time'
 
-console.log(time(new Date));
+console.log(time(new Date()))

@@ -9,7 +9,7 @@ const hasOwnProperty = Object.prototype.hasOwnProperty
  * @returns {boolean} 如果value是空返回true，否则返回false。
  */
 
-function isEmpty(value, space) {
+function isEmpty (value, space) {
   if (value === null) {
     return true
   }

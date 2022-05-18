@@ -21,7 +21,7 @@ const config = {
  * @param {*} value 传入的数据
  * @returns {String} 返回该数据的类型
  */
-function get(value) {
+function get (value) {
   const key = toString.call(value)
   const type = config[key]
   if (type === undefined) {
