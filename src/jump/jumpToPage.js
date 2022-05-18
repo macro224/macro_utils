@@ -5,7 +5,6 @@ import isOf from '../type/isOf'
  * @memberof url
  * @param {Router} router 路由
  * @returns {Function} 返回跳转的路由
- *
  */
 const jumpToPage = (router) => {
   return function (url, target = '_self') {

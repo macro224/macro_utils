@@ -25,7 +25,7 @@ function deepAssignArray (arr) {
 
 /**
  * 根据传入的数据判断数据类型
- * @param {*} obj 传入的数据
+ * @param {*} obj 传入的数据 (对象/数组)
  * @returns {*} 如果传入的是 对象||数组 则返回copy后数据,否则返回字符串提示
  */
 const deepAssign = function (...obj) {

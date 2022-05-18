@@ -6,7 +6,7 @@
  * @returns {Object} 返回参数对象 或者 字符串
  */
 
-function formatTime (date, obj, division = '/') {
+function formatTime (date, isobj, division = '/') {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
   const day = date.getDate()
@@ -14,7 +14,7 @@ function formatTime (date, obj, division = '/') {
   const minute = date.getMinutes()
   const second = date.getSeconds()
 
-  return obj ? { year, month, day, hour, minute, second } : [year, month, day].map(formatNumber).join(division) + ' ' + [hour, minute, second].map(formatNumber).join(':')
+  return isobj ? { year, month, day, hour, minute, second } : [year, month, day].map(formatNumber).join(division) + ' ' + [hour, minute, second].map(formatNumber).join(':')
 }
 
 function formatNumber (n) {
