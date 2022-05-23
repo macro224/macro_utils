@@ -1,6 +1,6 @@
 {
   "name": "macro_utils",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "utils",
   "main": "./lib",
   "scripts": {
