@@ -2,7 +2,7 @@ import rollupBaseConf from './rollup.base.conf'
 import filesize from 'rollup-plugin-filesize'
 import { terser } from 'rollup-plugin-terser'
 const getRollupProdConfig = function (name, input) {
-  if (name === 'MacroUtils') name = 'index'
+  if (name === 'macroUtils') name = 'index'
   return {
     ...rollupBaseConf,
     input,
@@ -11,7 +11,7 @@ const getRollupProdConfig = function (name, input) {
       format: 'umd',
       name,
       globals: {
-        'axios': 'axios'
+        axios: 'axios'
       }
     }],
     plugins: [

@@ -1,10 +1,9 @@
-const execa = require('execa')
-const path = require('path')
-const { getModuleName } = require('./utils/argv')
+import execa from 'execa'
+import { resolve } from 'path'
+import { getModuleName } from './utils/argv'
 
-const rootPath = path.resolve(__dirname, '../')
+const rootPath = resolve(__dirname, '../')
 const moduleName = getModuleName() || ''
-
 
 const publish = async () => {
   try {
@@ -13,12 +12,12 @@ const publish = async () => {
       cwd: rootPath,
       stdio: 'inherit',
       env: {
-        'NODE_ENV': 'production',
-        'MODULE_NAME': moduleName
+        NODE_ENV: 'production',
+        MODULE_NAME: moduleName
       }
     })
   } catch (e) {
-    throw e
+    return e
   }
 }
 

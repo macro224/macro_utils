@@ -19,7 +19,7 @@ const config = {
 /**
  * 根据传入的数据判断数据类型
  * @param {*} value 传入的数据
- * @returns {String} 返回该数据的类型
+ * @returns {String} 返回该数据的类型 ( boolean, number, string, undefined, null, array, object, function, symbol, date, json, set, map)
  */
 function get (value) {
   const key = toString.call(value)

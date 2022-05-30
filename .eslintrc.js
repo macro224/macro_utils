@@ -30,6 +30,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'max-len': 'off',
     'no-underscore-dangle': 'off',
-    '@typescript-eslint/no-explicit-any': 'off'
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-var-requires': 0
   }
 }

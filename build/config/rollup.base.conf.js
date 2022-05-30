@@ -1,4 +1,3 @@
-const path = require('path')
 const alias = require('@rollup/plugin-alias')
 const { eslint } = require('rollup-plugin-eslint')
 const resolve = require('@rollup/plugin-node-resolve').default
@@ -6,7 +5,6 @@ const replace = require('@rollup/plugin-replace')
 const commonjs = require('@rollup/plugin-commonjs')
 const babel = require('rollup-plugin-babel')
 const json = require('@rollup/plugin-json')
-
 
 export default {
   external: ['axios'],

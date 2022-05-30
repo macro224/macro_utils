@@ -8,7 +8,7 @@ const resolve = function (filePath) {
   return path.join(__dirname, '..', filePath)
 }
 
-const getRollupDevConfig = function (name, input) {
+const getRollupDevConfig = function () {
   return {
     ...rollupBaseConf,
     input: './src/examples.js',
