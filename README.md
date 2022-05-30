@@ -36,7 +36,7 @@
   > 根据传入的数据判断数据类型<br>
   > 参数 obj 传入的数据 (对象/数组)<br>
   > 返回copy后数据(对象/数组), 否则返回字符串提示<br>
-  > deepAssign(data)
+  > data.deepAssign(data)
 
   参数 | 说明 | 类型 | 默认值
   ---- | ----- | ------ | -------
@@ -47,7 +47,7 @@
   > 根据传入内容清除其中的空格<br>
   > 参数 str 传入内容<br>
   > 参数 direction 去除空格的方式<br>
-  > delSpac(data, direction)
+  > data.delSpac(data, direction)
 
   参数 | 说明 | 类型 | 默认值
   ---- | ----- | ------ | -------
@@ -61,7 +61,7 @@
   <h3 id="table_ex-csv">csv</h3>
 
   > 根据传入的数据来导出表格<br>
-  > csv(params)
+  > ex.csv(params)
 
   参数 | 说明 | 类型 | 默认值
   ---- | ----- | ------ | -------
@@ -77,7 +77,7 @@
   <h3 id="table_format-time">time</h3>
 
   > 根据传入的时间返回相应的格式<br>
-  > time(date, division, obj)
+  > format.time(date, division, obj)
 
   参数 | 说明 | 类型 | 默认值
   ---- | ----- | ------ | -------
@@ -88,7 +88,7 @@
   <h3 id="table_format-urlParams">urlParams</h3>
 
   > 根据传入的链接, 获取链接后面的参数<br>
-  > urlParams(url)
+  > format.urlParams(url)
 
   参数 | 说明 | 类型 | 默认值
   ---- | ----- | ------ | -------
@@ -121,7 +121,7 @@
   <h3 id="table_jump-jumpToPage">jumpToPage</h3>
 
   > 路由跳转<br>
-  > jumpToPage(router)(url, target)
+  > jump.jumpToPage(router)(url, target)
 
   参数 | 说明 | 类型 | 默认值
   ---- | ----- | ------ | -------
