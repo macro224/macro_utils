@@ -187,7 +187,7 @@ class Http {
    *
    * import Http from 'futong-utils/lib/http'
    * const http = Http.init({ beforeRequest: () => {} })
-   * http.get('/api/user/save', { id: 1789 })
+   * http.post('/api/user/save', { id: 1789 })
    *
    */
   async post (url, params = {}, config = {}) {
